@@ -1,0 +1,17 @@
+body {
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  align-items: center;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}

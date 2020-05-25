@@ -1,0 +1,5 @@
+build
+.env
+views
+node_modules
+data

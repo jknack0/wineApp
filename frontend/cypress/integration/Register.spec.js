@@ -1,0 +1,17 @@
+describe('Register', function() {
+  it('User logs in', function() {
+    cy.visit('http://localhost:3000')
+    cy.contains('Get Started').click()
+    cy.location('pathname').should('eq', '/createaccount')
+    cy.get('#firstname').click().type('Jon')
+    cy.get('#lastname').click().type('Knack')
+    cy.get('#date').click().type('1989-04-08')
+    cy.get('#next').click()
+    cy.get('#username').click().type('jknack0')
+    cy.get('#email').click().type('jknack0@email.com')
+    cy.get('#password').click().type('asdf')
+    cy.get('#confirmPassword').click().type('asdf')
+    cy.get('#createAccount').click()
+    cy.location('pathname').should('eq', '/searchbar')
+  })
+})
